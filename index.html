@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP TRAINING</title>
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+      rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+      crossorigin="anonymous"
+    />
+      <script 
+       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+       crossorigin="anonymous"
+    ></script>
+
+    <!--Bootstrap Icons-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark text-light p-3 fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand text-light">Heros World</a>
+
+            <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navmenu"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+              
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#Intro" class="nav-link">What you'll learn</a>
+                   </li>
+                   <li  class="nav-item">
+                        <a href="#question" class="nav-link">Questions</a>
+                   </li>
+                   <li  class="nav-item">
+                        <a href="#instructors" class="nav-link">Instructors</a>
+                   </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Showcase-->
+    <section class="bg-dark text-light text-center text-md-start pb-4 pb-md-0">
+        <div class="container">
+            <div class="d-md-flex align-items-center pb-2">
+                <div class="px-lg-5">
+                    <h1>Become a <span class="text-warning">Web Developer</span></h1>
+                    <p class="lead py-2">Go from absolute beginner to becoming a paid professionals. 
+                      Working on real life projects.
+                    </p>
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#registerModal">Register Now!</button>
+                </div>
+                <img src="images/Debbie-unique.png" alt="" class="img-fluid d-none d-md-block bg-primary rounded-circle w-50 p-1">
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="lead">Fill out this form and we'll get back to you</p>
+
+        <div class="mb-3">
+          <label for="Firstname" class="form-label">Firstname</label>
+          <input type="text" class="form-control" id="Firstname" placeholder="Enter Firstname">
+        </div>
+        <div class="mb-3">
+          <label for="Lastname" class="form-label">Lastname</label>
+          <input type="text" class="form-control" id="Lastname" placeholder="Enter Lastname">
+        </div>
+        <div class="mb-3">
+          <label for="Email" class="form-label">Email</label>
+          <input type="text" class="form-control" id="Email" placeholder="Enter Email Address">
+        </div>
+        <div class="mb-3">
+          <label for="Phone" class="form-label">Phone</label>
+          <input type="text" class="form-control" id="Phone" placeholder="Enter Phone Number">
+        </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!--Newsletter-->
+    <section class="bg-primary text-light p-5">
+        <div class="container">
+            <div class="d-md-flex justify-content-between">
+                <h3 class="text-center text-md-start">Sign Up For Our Newsletter</h3>
+
+                <div class="input-group news-input">
+                  <input 
+                  type="text" 
+                  class="form-control" 
+                  placeholder="Enter email" 
+                />
+                  <button 
+                  class="btn btn-dark btn-lg"
+                   type="button" 
+                   id="button-addon2"
+                >
+                   Send
+                </button>
+             </div>
+            </div>
+          </div>
+    </section>
+
+    <!--Boxes-->
+    <section class="py-5" id="boxes">
+        <div class="container">
+            <div class="row text-center g-2">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <div class="h1">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                          <h3 class="card-title">Virtual</h3>
+                          <p class="card-text">Join a thriving virtual classroom with tools to ensure your success. Stay connected and grow your expertise, no matter where you are. effective remote learning journey.</p>
+                          <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body">
+                            <div class="h1">
+                                <!--<i class="bi bi-briefcase"></i>-->
+                                <i class="bi bi-file-earmark-code"></i>
+                            </div>
+                          <h3 class="card-title">Project Based</h3>
+                          <p class="card-text">Work on real-world projects that simulate professional environments and expectations. This methodology builds confidence and prepares you for career advancement.</p>
+                          <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body">
+                            <div class="h1">
+                                <i class="bi bi-award"></i>
+                            </div>
+                          <h3 class="card-title">Certificate</h3>
+                          <p class="card-text">Achieve certificates that validate your skills and dedication to excellence. Let your qualifications set you apart in a competitive market..</p>
+                          <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Intro Section-->
+    <section class="py-5" id="Intro">
+        <div class="container">
+            <div class="row align-items-center justify-contect-between">
+                <div class="col-md">
+                   <img src="images/intro-img.png" alt="" class="img-fluid  p-5">
+                </div>
+                <div class="col-md text-center text-md-start">
+                    <h2>Go from zero to Hero</h2>
+                    <p class="class-lead">
+                        Transform your skills from beginnerto advanced with our comprehensive courses designed for all levels.
+                    </p>
+                    <p>Wheather you're just starting out or looking to deepen your expertise, our tailored program provides hands-on learning experiences to help you succeeed. With guidance from industry professionals. You'll build confidence and master the skills you need to thrive in your career.                        
+                    </p>
+
+                    <a href="#" class="btn btn-light"><i class="bi bi-chevron-right"></i> Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Learn section-->
+    <section class="bg-dark py-5" id="learn">
+        <div class="container">
+            <div class="row align-items-center justify-content-between text-center text-md-start text-light">
+                <div class="col md">
+                    <h2>Master ReactJS, NodeJS, ExpressJS, MongoDB, and Next.js</h2>
+                    <p class="lead">
+                        Become a full-stack developer with our comprehensive courses on ReactJS, NodeJS, ExpressJS, MongoDB, and Next.js.
+                    </p>
+                    <p class="mb-2">
+                        Learn to build responsive front-end applications with ReactJS, optimize your development with NextJS, create powerful back-end services using NodeJS and ExpressJS, and efficiently manage databases with MongoDB.Our hands-on courses offer real-world projects and expert guidance to help you master modern web development technologies.
+                    </p>
+                    <a href="#" class="btn btn-light"><i class="class bi bi-chevron-right"></i> Read More</a>
+                </div>
+                <div class="col md">
+                    <img src="images/intro-img.png" alt="" class="img p-5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Question Accordion Section-->
+    <Section class="py-5" id="question">
+        <div class="container">
+            <h2 class="text-center">Frequently Asked Questions</h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" 
+                      type="button"
+                      data-bs-toggle="collapse" 
+                      data-bs-target="#flush-collapseOne"
+                      >
+                      What is the duration for this course?
+                    </button>
+                  </h2>
+                  <div 
+                  id="flush-collapseOne"
+                   class="accordion-collapse collapse" 
+                   aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample"
+                    >
+                    <div class="accordion-body">
+                        The duration of a full-stack development course typically varies depending on the program's structure and intensity. For intensive bootcamps, the course may last about three to six months, focusing on accelerated, hands-on learning. These programs aim to equip students with practical skills for immediate job readiness. On the other hand, more comprehensive courses offered by universities or online platforms often extend over six months to a year, providing a deeper understanding of both front-end and back-end technologies. Self-paced courses allow flexibility, enabling learners to complete the curriculum at their convenience, which could take a shorter or longer period depending on their commitment.
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button
+                     class="accordion-button collapsed" 
+                     type="button" data-bs-toggle="collapse" 
+                     data-bs-target="#flush-collapseTwo" 
+                     >
+                      What will i be able to build?
+                    </button>
+                  </h2>
+                  <div
+                     id="flush-collapseTwo" 
+                     class="accordion-collapse collapse"
+                     aria-labelledby="flush-headingTwo"
+                     data-bs-parent="#accordionFlushExample"
+                     >
+                    <div class="accordion-body">
+                        In web development, you will be able to create responsive and visually appealing websites that provide seamless user experiences across devices. You can design and implement functional web applications, such as e-commerce platforms, blogs, portfolios, and social media platforms. Additionally, you can develop backend systems that handle data processing, storage, and server-side logic for dynamic content. With advanced skills, you can build single-page applications, integrate third-party APIs, and optimize web performance. Furthermore, you can implement secure authentication systems and collaborate on full-stack solutions to meet business or individual needs.
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button 
+                    class="accordion-button collapsed"
+                     type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree" 
+                      >
+                      IS there certificate after the training?
+                    </button>
+                  </h2>
+                  <div 
+                  id="flush-collapseThree" 
+                  class="accordion-collapse collapse"
+                   aria-labelledby="flush-headingThree" 
+                   data-bs-parent="#accordionFlushExample"
+                   >
+                    <div class="accordion-body">
+                        Yes, many web development courses offer a certificate upon completion. These certificates typically serve as a recognition of the skills and knowledge acquired during the course. They may be provided by the educational institution, platform, or organization that offers the course. Depending on the program, this certificate can be used to demonstrate proficiency in web development and may enhance your resume or professional profile. However, it's important to verify with the specific course provider whether a certificate is included and what criteria must be met for its issuance.
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingfour">
+                      <button
+                       class="accordion-button collapsed" 
+                       type="button" data-bs-toggle="collapse" 
+                       data-bs-target="#flush-collapsefour" 
+                       >
+                        What prerequisities do i need for this course?
+                      </button>
+                    </h2>
+                    <div
+                       id="flush-collapsefour" 
+                       class="accordion-collapse collapse"
+                       aria-labelledby="flush-headingfour"
+                       data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        To enroll in a web development course, it is generally recommended to have a basic understanding of computer programming concepts. Familiarity with HTML, CSS, and JavaScript is highly beneficial, as these are fundamental technologies in web development. Knowledge of how websites work, including client-server interaction and basic internet protocols, will also help you better grasp the course material. While not always required, experience with using a code editor and web browsers' developer tools may be advantageous. Additionally, possessing strong problem-solving skills and an eagerness to learn will contribute to your success in the course.
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingfive">
+                      <button
+                       class="accordion-button collapsed" 
+                       type="button" data-bs-toggle="collapse" 
+                       data-bs-target="#flush-collapsefive" 
+                       >
+                        What kind of support will i recieve during the course?
+                      </button>
+                    </h2>
+                    <div
+                       id="flush-collapsefive" 
+                       class="accordion-collapse collapse"
+                       aria-labelledby="flush-headingfive"
+                       data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                          During your web development course, you will receive comprehensive support aimed at fostering your learning and success. This includes access to instructional materials that cover the fundamental and advanced aspects of web development. Additionally, you will have guidance from instructors who can provide clarification and answer questions during lectures or office hours. You will also have the opportunity to engage in hands-on projects, where feedback will be provided to help you refine your skills. Peer collaboration and discussion forums may also be available, offering opportunities to learn from fellow students. Furthermore, technical support will be available should you encounter any issues with the course platform or tools. All of these resources work together to ensure that you have the guidance, feedback, and assistance you need to succeed throughout the course.
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </Section>
+
+    <!--Instructors Section-->
+
+    <section class="py-5 bg-primary" id="instructors">
+        <div class="container">
+            <h2 class="text-center text-light">Our Instructors</h2>
+            <p class="lead text-light text-center">
+              Our instructors are 5 star rated instructors with over 5+ years 
+              working as a dedicated web developers in the industry.
+            </p>
+
+            <div class="row g-4 text-center">
+              <div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                   <div class="card-body">
+                     <img 
+                       src="images/Debbie-unique.png" 
+                       alt="" 
+                       class=" rounded-circle img-fluid mb-3"
+                     />
+                     <h3 class="card-title">Deborah Ituen</h3>
+                     <p class="card-text">
+                      Deborah is a seasonal full-stack developer and mentor,
+                      specializing in building scalable web applications and 
+                      teaching the MERN stack.
+                    </p>
+
+                    <a href="#" class="bi bi-twitter text-dark mx-1"></a>
+                    <a href="#" class="bi bi-facebook text-dark mx-1"></a>
+                    <a href="#" class="bi bi-linkedin text-dark mx-1"></a>
+                    <a href="#" class="bi bi-instagram text-dark mx-1"></a>
+                   </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                   <div class="card-body">
+                     <img 
+                       src="https://randomuser.me/api/portraits/women/2.jpg" 
+                       alt="" 
+                       class=" rounded-circle img-fluid mb-3"
+                     />
+                     <h3 class="card-title">Helen Paul</h3>
+                     <p class="card-text">
+                      An expert in user experience designs. Helen has over 10 years 
+                      of experience working with top global grands.
+                    </p>
+
+                    <a href="#" class="bi bi-twitter text-dark mx-1"></a>
+                    <a href="#" class="bi bi-facebook text-dark mx-1"></a>
+                    <a href="#" class="bi bi-linkedin text-dark mx-1"></a>
+                    <a href="#" class="bi bi-instagram text-dark mx-1"></a>
+                   </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                   <div class="card-body">
+                     <img 
+                       src="https://randomuser.me/api/portraits/men/7.jpg" 
+                       alt="" 
+                       class=" rounded-circle img-fluid mb-3"
+                     />
+                     <h3 class="card-title">Mark philip</h3>
+                     <p class="card-text">
+                      A full-stack developer with a passion for teaching. Mark 
+                      specializes in javaScript frameworks and backend systems.
+                    </p>
+
+                    <a href="#" class="bi bi-twitter text-dark mx-1"></a>
+                    <a href="#" class="bi bi-facebook text-dark mx-1"></a>
+                    <a href="#" class="bi bi-linkedin text-dark mx-1"></a>
+                    <a href="#" class="bi bi-instagram text-dark mx-1"></a>
+                   </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                   <div class="card-body">
+                     <img 
+                       src="https://randomuser.me/api/portraits/men/5.jpg" 
+                       alt="" 
+                       class=" rounded-circle img-fluid mb-3"
+                     />
+                     <h3 class="card-title">James Brown</h3>
+                     <p class="card-text">
+                      James is a data scientist with extensive knowledge in machine 
+                      learning. Ai and big data technologies.
+                    </p>
+
+                    <a href="#" class="bi bi-twitter text-dark mx-1"></a>
+                    <a href="#" class="bi bi-facebook text-dark mx-1"></a>
+                    <a href="#" class="bi bi-linkedin text-dark mx-1"></a>
+                    <a href="#" class="bi bi-instagram text-dark mx-1"></a>
+                   </div>
+                </div>
+              </div>
+
+              <!--<div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                   <div class="card-body">
+                     <img 
+                       src="images/Debbie-unique.png" 
+                       alt="" 
+                       class=" rounded-circle img-fluid mb-3"
+                     />
+                     <h3 class="card-title">Deborah Ituen</h3>
+                     <p class="card-text">
+                      Deborah is a seasonal full-stack developer and mentor,
+                      specializing in building scalable web applications and 
+                      teaching the MERN stack.
+                    </p>
+
+                    <a href="#" class="bi bi-twitter text-dark mx-1"></a>
+                    <a href="#" class="bi bi-facebook text-dark mx-1"></a>
+                    <a href="#" class="bi bi-linkedin text-dark mx-1"></a>
+                    <a href="#" class="bi bi-instagram text-dark mx-1"></a>
+                   </div>
+                </div>-->
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact section-->
+    <section class="p-5">
+      <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md">
+              <h2 class="text-center">Contact Info</h2>
+
+              <ul class="list-group list-group-flush lead">
+                <li class="list-group-item"><span class="fw-bold">Main Location:</span> Uyo, Akwa-Ibom state</li>
+                <li class="list-group-item"><span class="fw-bold">Enrollmaent Phone:</span> enrolment@gmail.com</li>
+                <li class="list-group-item"><span class="fw-bold">Student Phone:</span> 0707673664</li>
+                <li class="list-group-item"><span class="fw-bold">Student Email:</span> student@gmail.com</li>
+              </ul>
+            </div>
+            <div class="col-md text-center">
+              <img src="images/contact-us.jpg" alt="" class="img-fluid w-50 text-center">
+            </div>
+         </div>
+      </div>
+    </section>
+
+    <!--Footer section-->
+    <section class="p-5  bg-dark text-light position-relative">
+      <div class="container text-center">
+        <p class="lead">Copyright &COPY; 2024 Fullstack Bootcamp</p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </section>
+  </body>
+</html>
